@@ -1,2 +1,2 @@
 # calculator
-simple calculator
+simple calculator using case/break
