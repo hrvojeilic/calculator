@@ -1,0 +1,40 @@
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    char op;
+    float broj1, broj2;
+
+    cout << "Unesite operator +, -, * ili /: ";
+    cin >> op;
+
+    cout << "Unesite dva broja: ";
+    cin >> broj1 >> broj2;
+
+    switch(op)
+    {
+        case '+':
+            cout << broj1+broj2;
+            break;
+
+        case '-':
+            cout << broj1-broj2;
+            break;
+
+        case '*':
+            cout << broj1*broj2;
+            break;
+
+        case '/':
+            cout << broj1/broj2;
+            break;
+
+        default:
+            // Ako je unesen krivi operator, javlja se poruka pogreske
+            cout << "Pogreska, unesen netocan operator";
+            break;
+    }
+
+    return 0;
+}
